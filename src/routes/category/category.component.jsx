@@ -8,7 +8,7 @@ import { selectCategoriesMap } from '../../store/categories/category.selector';
 
 import { CategoryContainer, Title } from './category.styles';
 
-const Category = () => {
+const Category = ({}) => {
   const { category } = useParams();
   const categoriesMap = useSelector(selectCategoriesMap);
   const [products, setProducts] = useState(categoriesMap[category]);
@@ -23,7 +23,7 @@ const Category = () => {
       <CategoryContainer>
         {products &&
           products.map((product) => (
-            <ProductCard key={product.id} product={product} />
+            <ProductCard key={product.id} product={product} categoryName={category} />
           ))}
       </CategoryContainer>
     </Fragment>

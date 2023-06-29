@@ -16,11 +16,10 @@ export const ProductCartContainer = styled.div`
   }
 
   button {
-    width: 80%;
+    width: 100%;
     opacity: 0.7;
-    position: absolute;
-    bottom: 55px;
     display: none;
+    margin: 5px;
   }
 
   &:hover {
@@ -50,4 +49,12 @@ export const Name = styled.span`
 
 export const Price = styled.span`
   width: 10%;
+`;
+
+export const Buttons = styled.div`
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 50px;
 `;
