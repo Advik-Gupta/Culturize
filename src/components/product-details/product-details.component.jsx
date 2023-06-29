@@ -8,17 +8,32 @@ import { selectCategoriesMap } from '../../store/categories/category.selector';
 const ProductDetails = ({productId, categoryId}) => {
     const categoriesMap = useSelector(selectCategoriesMap);
     const [products, setProducts] = useState(categoriesMap[categoryId]);
-    const [product, setProduct] = useState();
+    const [product, setProduct] = useState(undefined);
 
     useEffect(() => {
         setProducts(categoriesMap[categoryId]);
-        console.log(products[`${productId}`])
+        products.map((product) => {
+            if (product.id === parseInt(productId)) {
+                setProduct(product)
+            }
+        })
       }, [categoryId, categoriesMap]);
 
+      if (product) {
+        return (
+            <div>
+                Hello, {product.name}
+            </div>
+        )
+      } else {
+        return (
+            <div>
+                Waiting for product information
+            </div>
+        )
+      }
     
-    return (
-        <div>Hello, {productId}</div>
-    )
+
 }
 
 export default ProductDetails;
