@@ -1,3 +1,4 @@
+import { useSelector } from 'react-redux';
 import { createSelector } from 'reselect';
 
 const selectCartReducer = (state) => state.cart;

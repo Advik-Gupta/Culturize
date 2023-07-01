@@ -20,14 +20,24 @@ import {
   getDocs,
 } from 'firebase/firestore';
 
+// const firebaseConfig = {
+//     apiKey: "AIzaSyBqpJeu7OIpgeyLdJzU0N51z7Vq19R0HMo",
+//     authDomain: "advik-clothing-v2.firebaseapp.com",
+//     projectId: "advik-clothing-v2",
+//     storageBucket: "advik-clothing-v2.appspot.com",
+//     messagingSenderId: "569951903844",
+//     appId: "1:569951903844:web:f50c745f0c5dc1e3893f71",
+//     measurementId: "G-7VHF37V2SZ"
+// };
+
 const firebaseConfig = {
-    apiKey: "AIzaSyBqpJeu7OIpgeyLdJzU0N51z7Vq19R0HMo",
-    authDomain: "advik-clothing-v2.firebaseapp.com",
-    projectId: "advik-clothing-v2",
-    storageBucket: "advik-clothing-v2.appspot.com",
-    messagingSenderId: "569951903844",
-    appId: "1:569951903844:web:f50c745f0c5dc1e3893f71",
-    measurementId: "G-7VHF37V2SZ"
+  apiKey: "AIzaSyDMXaBAboPPad-vJH_u24qLmXDzficnrNo",
+  authDomain: "culturize-8c693.firebaseapp.com",
+  projectId: "culturize-8c693",
+  storageBucket: "culturize-8c693.appspot.com",
+  messagingSenderId: "223163046750",
+  appId: "1:223163046750:web:23593cd6c0da7c7cfbcdcf",
+  measurementId: "G-7SJ7WYRR60"
 };
 
 const firebaseApp = initializeApp(firebaseConfig);

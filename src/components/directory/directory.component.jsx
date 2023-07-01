@@ -5,33 +5,33 @@ import { DirectoryContainer } from './directory.styles';
 const categories = [
   {
     id: 1,
-    title: 'hats',
+    title: 'bracelets',
     imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
-    route: 'shop/hats',
+    route: 'shop/bracelets',
   },
   {
     id: 2,
-    title: 'jackets',
+    title: 'chains',
     imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
-    route: 'shop/jackets',
+    route: 'shop/chains',
   },
   {
     id: 3,
-    title: 'sneakers',
+    title: 'posters',
     imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
-    route: 'shop/sneakers',
+    route: 'shop/posters',
   },
   {
     id: 4,
-    title: 'womens',
+    title: 'rings',
     imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
-    route: 'shop/womens',
+    route: 'shop/rings',
   },
   {
     id: 5,
-    title: 'mens',
+    title: 'stickers',
     imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
-    route: 'shop/mens',
+    route: 'shop/stickers',
   },
 ];
 
